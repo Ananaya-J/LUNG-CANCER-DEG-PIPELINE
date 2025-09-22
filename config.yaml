@@ -1,0 +1,44 @@
+# Configuration file for Lung Cancer DGE Pipeline
+
+# Analysis parameters
+analysis:
+  fdr_threshold: 0.05          # False Discovery Rate threshold
+  log2fc_threshold: 1.0        # Log2 fold change threshold (2-fold)
+  min_expression: 1.0          # Minimum expression level
+  min_sample_percent: 0.2      # Gene must be expressed in 20% of samples
+
+# Normalization settings
+normalization:
+  method: "log2"               # Options: log2, zscore, quantile
+  pseudocount: 1               # Pseudocount for log transformation
+
+# Visualization settings
+plots:
+  dpi: 300                     # Resolution for saved plots
+  figure_size: [20, 15]        # Figure size in inches
+  colormap: "RdBu_r"          # Heatmap colormap
+
+# Output settings
+output:
+  format: "csv"                # Output format for results
+  save_plots: true             # Save plots to file
+  generate_report: true        # Generate HTML report
+
+# Dataset information
+datasets:
+  GSE31210:
+    description: "Lung adenocarcinoma"
+    platform: "Affymetrix HG-U133 Plus 2.0"
+    samples: 246
+  GSE19188:
+    description: "Non-small cell lung cancer"
+    platform: "Affymetrix HG-U133 Plus 2.0"
+    samples: 156
+  GSE32863:
+    description: "Lung adenocarcinoma"
+    platform: "Illumina HumanWG-6 v3.0"
+    samples: 116
+  GSE43458:
+    description: "Lung adenocarcinoma"
+    platform: "Affymetrix HG-U133 Plus 2.0"
+    samples: 110
