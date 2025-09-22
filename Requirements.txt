@@ -1,0 +1,31 @@
+# Core dependencies for Lung Cancer DGE Pipeline
+# Python 3.8+ required
+
+# Data manipulation
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Statistical analysis
+scipy>=1.7.0
+statsmodels>=0.12.0
+
+# Machine learning
+scikit-learn>=0.24.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Data acquisition
+requests>=2.26.0
+urllib3>=1.26.0
+
+# File handling
+openpyxl>=3.0.0  # Excel support
+xlrd>=2.0.0      # Legacy Excel
+
+# Optional: Advanced features
+# Uncomment if needed:
+# GEOparse>=2.0.0  # Direct GEO download
+# pydeseq2>=0.4.0  # DESeq2 implementation
+# plotly>=5.0.0    # Interactive plots
