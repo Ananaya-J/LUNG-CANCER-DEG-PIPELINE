@@ -6,7 +6,7 @@ A high-performance pipeline for analyzing differential gene expression in lung c
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/lung-cancer-dge.git
+git clone https://github.com/Ananaya-J/LUNG-CANCER-DEG-PIPELINE.git
 cd lung-cancer-dge
 
 # Install dependencies
